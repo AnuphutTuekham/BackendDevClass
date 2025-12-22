@@ -1,0 +1,47 @@
+
+### GET ดึงข้อมูลผู้ใช้ทั้งหมด
+GET http://localhost:3000/api/users
+
+### GET ดึงข้อมูลผู้ใช้ id=1
+GET http://localhost:3000/api/users/1
+
+### GET ดึงข้อมูลผู้ใช้ ที่ไม่มีในระบบ
+GET http://localhost:3000/api/users/99
+
+
+### POST สร้าง user ใหม่ที่ถูกต้อง
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "username": "user01",
+    "password" : "user1234",
+    "firstname": "user01firstname",
+    "lastname": "user01lastname"
+}
+
+### POST สร้าง user ใหม่ที่ไม่ถูกต้อง
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "password" : "user1234",
+    "firstname": "user01firstname",
+    "lastname": "user01lastname"
+}
+
+### PUT update user id=1
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+
+{
+    "username": "Henry",
+    "password" : "Henrypass",
+    "firstname": "Henry",
+    "lastname": "feel quite hungry"
+}
+
+
+### DELETE ลบ user id = 4 
+DELETE http://localhost:3000/api/users/4
+

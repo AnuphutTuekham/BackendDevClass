@@ -1,0 +1,35 @@
+
+### GET /api/products - ดึงข้อมูลสินค้าทั้งหมด
+GET http://localhost:3001/api/products
+
+###
+
+### GET /api/products/1 - ดึงข้อมูลสินค้าตาม ID
+GET http://localhost:3001/api/products/1
+
+###
+
+### POST /api/products - สร้างสินค้าใหม่
+POST http://localhost:3001/api/products
+Content-Type: application/json
+
+{
+  "name": "POST /api/products - สร้างสินค้าใหม่"
+}
+
+###
+
+### PUT /api/products/1 - อัปเดตข้อมูลสินค้าตาม ID
+PUT http://localhost:3001/api/products/1
+Content-Type: application/json
+
+{
+  "name": "PUT /api/products/1 - อัปเดตข้อมูลสินค้าตาม ID"
+}
+
+###
+
+### DELETE /api/products/1 - ลบสินค้าตาม ID
+DELETE http://localhost:3001/api/products/1
+
+###
