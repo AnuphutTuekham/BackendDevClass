@@ -5,7 +5,7 @@ async function initializeDatabase() {
     // หากไฟล์ฐานข้อมูลยังไม่มี จะถูกสร้างขึ้นใหม่
 
     const option = { verbose: console.log };
-    const db = new Database('app.db',option);
+    const db = new Database('backend_test.db',option);
     return db;
 }
 
